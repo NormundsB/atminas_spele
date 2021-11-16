@@ -5,3 +5,4 @@ Armands te bija!!!
 Normis arī bija
 
 - git add
+Noriks arī bija!
