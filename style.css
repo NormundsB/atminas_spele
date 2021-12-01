@@ -2,24 +2,42 @@
 {
 
 background: rgb(204,204,204);
+    background:#E8E8E8;
+	padding: 10px;
+	width: 600px;       /*➕*/
+	margin-left: auto;  /*➕*/
+	margin-right: auto; /*➕*/
 }
+
 h1
 {
     text-align:center;
     background:chocolate;
+    text-align: center;
+    background:#5BBCFF;
+	padding: 5px;       /*➕*/
 }
+
 ul
 {
     text-align: center;
+	padding: 0px; /*➕*/
 }
+
 li
 {
     display:inline-block;
+    display: inline-block;
 }
+
 .game
 {
     width: 350px;
     background:black;
+    background: black;
+	text-align: center;  /*➕*/
+	margin-left: auto;   /*➕*/
+	margin-right: auto;  /*➕*/
 }
 
 .block
@@ -27,6 +45,17 @@ li
     display:inline-block;
     background:crimson;
     width:100px;
+    display: inline-block;
+    background: crimson;
+    width: 100px;
     height: 100px;
     border:1px solid rgb(116,1,1);
+    border:1px solid rgb(116, 1, 1);
+	text-align: center;  /*➕*/
+	margin:5px;          /*➕*/
+	font-size: 45px;     /*➕*/
+}
+.block div
+{
+    display:none
 }
