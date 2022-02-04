@@ -42,12 +42,10 @@ li
 {
     display:inline-block;
     background:crimson;
-    width:100px;
+    width:95px;
     display: inline-block;
     background: crimson;
-    width: 100px;
-    height: 100px;
-    border:2px solid white;
+    height: 95px;
     border:2px solid white;
     border-radius: 3px;
 	text-align: center;  /*➕*/
