@@ -51,6 +51,7 @@ li
 	text-align: center;  /*➕*/
 	margin:5px;          /*➕*/
 	font-size: 72px;     /*➕*/
+    vertical-align: top;
 }
 .block div
 {
