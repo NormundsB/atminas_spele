@@ -31,7 +31,7 @@ li
 }
 .game
 {
-    width: 350px;
+    width: 351px;
     background:black;
 	text-align: center;  /*➕*/
 	margin-left: auto;   /*➕*/
@@ -52,7 +52,7 @@ li
     border-radius: 3px;
 	text-align: center;  /*➕*/
 	margin:5px;          /*➕*/
-	font-size: 65px;     /*➕*/
+	font-size: 72px;     /*➕*/
 }
 .block div
 {
