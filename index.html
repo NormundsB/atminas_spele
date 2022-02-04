@@ -37,36 +37,27 @@
     <!--beidzas header-->
     <div class="content">
         <p>Noteikumu teksts</p>
-        <div class="game">
-            <div class="block">😃</div>
-            <div class="block">😎</div>
-            <div class="block">🥳</div>
-            <div class="block">😃</div>
-            <div class="block">🥳</div>
-            <div class="block">😎</div>
+
+        <div class="content">
+            Vārds: <input id="vards" />
+            <br />
+            Vecums: <input id="vecums" />
+            <br />
+            Reģions:
+            <select id="regions">
+                <option value="Vidzeme">Vidzeme</option>
+                <option value="Latgale">Latgale</option>
+                <option value="Kurzeme">Kurzeme</option>
+                <option value="Sēlija">Sēlija</option>
+            </select>
+            <button onclick="saktSpeli()">Sākt</button>
         </div>
+        <p></p>
     </div>
 </div>
 <!--beidzas wrapper-->
 
 
-<div class="content">
-
-
-
-    Vārds: <input id="vards" />
-    <br />
-    Vecums: <input id="vecums" />
-    <br />
-    Reģions:
-    <select id="regions">
-        <option value="Vidzeme">Vidzeme</option>
-        <option value="Latgale">Latgale</option>
-        <option value="Kurzeme">Kurzeme</option>
-        <option value="Sēlija">Sēlija</option>
-    </select>
-    <button onclick="saktSpeli()">Sākt</button>
-</div>
 
 </div>
 <!--beidzas wrapper-->
@@ -74,14 +65,17 @@
 <script>
 
     function saktSpeli() {
-        let vards = document.querySelector("#vards").value
-        let vecums = document.querySelector("#vecums").value
-        let regions = document.querySelector("#regions").value
+        let vards = document.querySelector("#vards").value;
+        let vecums = document.querySelector("#vecums").value;
+        let regions = document.querySelector("#regions").value;
 
 
         console.log(vards + " " + vecums + " " + regions)
         if (vards == "") {
             alert("Ievadi vārdu")
+        }
+        else if (vecums == "" || Number(vecums) <= 12) {
+            alert("Vai Tu nēsi par Jaunu?")
         }
         else {
             window.location = "spele.html#" + vards + "," + vecums + "," + regions
