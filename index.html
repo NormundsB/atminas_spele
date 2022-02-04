@@ -36,23 +36,21 @@
     </div>
     <!--beidzas header-->
     <div class="content">
-        <p>Noteikumu teksts</p>
 
-        <div class="content">
-            Vārds: <input id="vards" />
-            <br />
-            Vecums: <input id="vecums" />
-            <br />
-            Reģions:
-            <select id="regions">
-                <option value="Vidzeme">Vidzeme</option>
-                <option value="Latgale">Latgale</option>
-                <option value="Kurzeme">Kurzeme</option>
-                <option value="Sēlija">Sēlija</option>
-            </select>
-            <button onclick="saktSpeli()">Sākt</button>
-        </div>
-        <p></p>
+        <h3 class="virsraksts">Info par spēlētāju:</h3>
+
+        Vārds: <input id="vards" />
+        <br />
+        Vecums: <input id="vecums" />
+        <br />
+        Reģions:
+        <select id="regions">
+            <option value="Vidzeme">Vidzeme</option>
+            <option value="Latgale">Latgale</option>
+            <option value="Kurzeme">Kurzeme</option>
+            <option value="Sēlija">Sēlija</option>
+        </select>
+        <button onclick="saktSpeli()">Sākt</button>
     </div>
 </div>
 <!--beidzas wrapper-->
@@ -64,7 +62,7 @@
 
 <script>
 
-    /* function saktSpeli() {
+    function saktSpeli() {
         let vards = document.querySelector("#vards").value;
         let vecums = document.querySelector("#vecums").value;
         let regions = document.querySelector("#regions").value;
@@ -81,41 +79,42 @@
             window.location = "spele.html#" + vards + "," + vecums + "," + regions
         }
     }
-    */
-    //beidzas saktSpeli() -->
 
-    let vards
-    const valsts = "Latvija"
-    vards = "Laura"
-    let vards2 = `Pēteris ir
-    labais!!!`
-    let klase = ['Jānis', 'Laura', 'Jana']
-    klase[3] = 'Uģis'
-
-    let skolens = {
-        vards: 'Jānis',
-        vecums: 16,
-        'patīk datori': 'jā'
-    }
-    skolens['vards']
-
-
-    let json = [
-        {
+    //
+    //beidzas saktSpeli()
+    /*
+        let vards
+        const valsts = "Latvija"
+        vards = "Laura"
+        let vards2 = `Pēteris ir
+        labais!!!`
+        let klase = ['Jānis', 'Laura', 'Jana']
+        klase[3] = 'Uģis'
+    
+        let skolens = {
             vards: 'Jānis',
-            vecums: 16
-        },
-        {
-            vards: 'Jana',
-            vecums: 17
+            vecums: 16,
+            'patīk datori': 'jā'
         }
-    ]
-
-
-    console.log('beigas ir')
-
-    document.querySelector(".virsraksts").innerHTML = "Vārds: " + vards
-
+        skolens['vards']
+    
+    
+        let json = [
+            {
+                vards: 'Jānis',
+                vecums: 16
+            },
+            {
+                vards: 'Jana',
+                vecums: 17
+            }
+        ]
+    
+    
+        console.log("beigas ir")
+    
+        document.querySelector(".virsraksts").innerHTML = "Vārds: " + vards
+    */
 
 </script>
 
